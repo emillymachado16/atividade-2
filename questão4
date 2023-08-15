@@ -1,0 +1,94 @@
+#include <stdio.h>
+int main(){
+    int n, milhar, centena, dezena, unidade;
+    printf("Digite um valor: ");
+    scanf("%d", &n);
+    
+    if(n < 1000 || n > 9999){
+        printf("\nINFORME OUTRO VALOR ENTRE 1000 E 9999");
+    }
+    else{
+    milhar = n/1000;
+    centena = (n/100)%10;
+    dezena = (n%100)/10;
+    unidade = (n%100)%10;
+    printf("\nNumero por extenso: ");
+    
+    if(milhar==1)
+    printf(" um");
+    else if(milhar==2)
+    printf(" dois");
+    else if(milhar==3)
+    printf(" tres");
+    else if(milhar==4)
+    printf(" quatro");
+    else if(milhar==5)
+    printf(" cinco");
+    else if(milhar==6)
+    printf(" seis");
+    else if(milhar==7)
+    printf(" sete");
+    else if(milhar==8)
+    printf(" oito");
+    else if(milhar==9)
+    printf(" nove");
+    
+    if(centena==1)
+    printf(" um");
+    else if(centena==2)
+    printf(" dois");
+    else if(centena==3)
+    printf(" tres");
+    else if(centena==4)
+    printf(" quatro");
+    else if(centena==5)
+    printf(" cinco");
+    else if(centena==6)
+    printf(" seis");
+    else if(centena==7)
+    printf(" sete");
+    else if(centena==8)
+    printf(" oito");
+    else if(centena==9)
+    printf(" nove");
+        
+    if(dezena==1)
+    printf(" um");
+    else if(dezena==2)
+    printf(" dois");
+    else if(dezena==3)
+    printf(" tres");
+    else if(dezena==4)
+    printf(" quatro");
+    else if(dezena==5)
+    printf(" cinco");
+    else if(dezena==6)
+    printf(" seis");
+    else if(dezena==7)
+    printf(" sete");
+    else if(dezena==8)
+    printf(" oito");
+    else if(dezena==9)
+    printf(" nove");
+    
+    if(unidade==1)
+    printf(" um");
+    else if(unidade==2)
+    printf(" dois");
+    else if(unidade==3)
+    printf(" tres");
+    else if(unidade==4)
+    printf(" quatro");
+    else if(unidade==5)
+    printf(" cinco");
+    else if(unidade==6)
+    printf(" seis");
+    else if(unidade==7)
+    printf(" sete");
+    else if(unidade==8)
+    printf(" oito");
+    else if(unidade==9)
+    printf(" nove");
+}
+    return 0;
+}
