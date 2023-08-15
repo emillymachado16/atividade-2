@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+    int n, soma, soma2, soma_final;
+    printf("DEFINA UM INTERVALO: ");
+    scanf("%d", &n);
+    printf("DIVISORES DE %d: ", n);
+    for(int i = 1; i <= n ; i++){
+        if(9%i==0){
+            printf("*%d, ", i);
+            soma += i;
+        }
+        if(n%i==0 && i!=1 && i!=9){
+            printf("%d, ", i);
+            soma2 += i;
+        }
+        soma_final = soma + soma2;
+    }
+    printf("\nOBS: os que estao com * sao divisores de 9");
+    printf("\n\nSoma de todos os divisores de %d: %d", n, soma_final);
+    printf("\nSoma dos divisores de 9: %d", soma);
+
+    return 0;
+}
